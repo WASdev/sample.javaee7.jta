@@ -57,8 +57,8 @@ Eclipse will use the Eclipse Buildship Gradle Plugin for Gradle project manageme
 2. Clone this project and import into Eclipse as an 'Existing Gradle Project'.
 3. Go to *Window > Show View > Other > Gradle Executions & Gradle Tasks*
 4. Go to Gradle Tasks view and run `clean` in build folder, then `build` in build folder, then `libertyStart` in liberty folder.
-5. You should see the following in the console: `Application sample.javaee7.concurrency started in XX.XX seconds.`
-6. Confirm web browser opens with the sample url, [http://localhost:9080/sample.javaee7.concurrency/](http://localhost:9080/sample.javaee7.concurrency/).
+5. You should see the following in the console: `Application sample.javaee7.jta started in XX.XX seconds.`
+6. Confirm web browser opens with the sample url: [http://hostname:port/sample.javaee7.jta/](http://hostname:port/sample.javaee7.jta/)
 
 ## WAS Classic
 
