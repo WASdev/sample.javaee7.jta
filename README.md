@@ -16,7 +16,7 @@ Then, in the jta-webapp directory issue the following command to run it on a Lib
 
     $ mvn liberty:run-server
 
-#### Import project and running in Eclipse/WDT
+#### Importing the project and running it in Eclipse/WDT
 
 The WebSphere Development Tools (WDT) for Eclipse can be used to control the server (start/stop/dump/etc.), it also supports incremental publishing with minimal restarts, working with a debugger to step through your applications, etc.
 WDT also provides:
@@ -49,7 +49,7 @@ To stop the application use the command:
 
     $ gradle libertyStop
     
-#### Import project and running tasks in Eclipse
+#### Importing the project and running tasks in Eclipse
 
 Eclipse will use the Eclipse Buildship Gradle Plugin for Gradle project management and accessibility to tasks.
 
