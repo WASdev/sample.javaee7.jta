@@ -6,7 +6,7 @@ This application demonstrates the use of @Transactional annotations to declarati
 
 ### Maven
 
-#### Building and Running in the Command Line
+#### Building and running in the Command Line
 
 The sample can be built using [Apache Maven](http://maven.apache.org/). In the directory where you cloned the repository issue the following command to build the source.
 
@@ -35,7 +35,7 @@ Installing WDT on Eclipse is as simple as a drag-and-drop, but the process is ex
 
 ### Gradle
 
-#### Building and Running in the Command Line
+#### Building and running in the Command Line
 
 The sample can be built using [Gradle](https://gradle.org/) and the [Liberty Gradle Plug-in][]. In the directory where you cloned the repository issue the following command to build and run the project.
 
@@ -49,7 +49,7 @@ To stop the application use the command:
 
     $ gradle libertyStop
     
-#### Import project and run tasks in Eclipse
+#### Import project and running tasks in Eclipse
 
 Eclipse will use the Eclipse Buildship Gradle Plugin for Gradle project management and accessibility to tasks.
 
