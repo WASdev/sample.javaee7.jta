@@ -6,6 +6,8 @@ This application demonstrates the use of @Transactional annotations to declarati
 
 ### Maven
 
+#### Building and Running in the Command Line
+
 The sample can be built using [Apache Maven](http://maven.apache.org/). In the directory where you cloned the repository issue the following command to build the source.
 
     $ mvn install
@@ -14,7 +16,7 @@ Then, in the jta-webapp directory issue the following command to run it on a Lib
 
     $ mvn liberty:run-server
 
-#### WebSphere Development Tools (WDT)
+#### Import project and running in Eclipse/WDT
 
 The WebSphere Development Tools (WDT) for Eclipse can be used to control the server (start/stop/dump/etc.), it also supports incremental publishing with minimal restarts, working with a debugger to step through your applications, etc.
 WDT also provides:
@@ -24,8 +26,6 @@ WDT also provides:
 
 Installing WDT on Eclipse is as simple as a drag-and-drop, but the process is explained on [wasdev.net](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/).
 
-#### Import project and running in Eclipse/WDT:
-
 1.	Select menu *File -> Import -> Maven -> Existing Maven Projects*.
 2.	Select *Browse...* to the top level directory titled sample.javaee7.jta and select *Finish*.
 3.	Click *Yes* to the WebSphere Liberty dialog to automatically create server in the Servers view for this project.
@@ -34,6 +34,8 @@ Installing WDT on Eclipse is as simple as a drag-and-drop, but the process is ex
 6.  Confirm web browser opens with the sample url: [http://hostname:port/sample.javaee7.jta/](http://hostname:port/sample.javaee7.jta/)
 
 ### Gradle
+
+#### Building and Running in the Command Line
 
 The sample can be built using [Gradle](https://gradle.org/) and the [Liberty Gradle Plug-in][]. In the directory where you cloned the repository issue the following command to build and run the project.
 
@@ -46,6 +48,17 @@ To start the application use the command:
 To stop the application use the command:
 
     $ gradle libertyStop
+    
+#### Import project and run tasks in Eclipse
+
+Eclipse will use the Eclipse Buildship Gradle Plugin for Gradle project management and accessibility to tasks.
+
+1. Go to *Help > Eclipse Marketplace > Install Buildship Gradle Integration 2.0*
+2. Clone this project and import into Eclipse as an 'Existing Gradle Project'.
+3. Go to *Window > Show View > Other > Gradle Executions & Gradle Tasks*
+4. Go to Gradle Tasks view and run `clean` in build folder, then `build` in build folder, then `libertyStart` in liberty folder.
+5. You should see the following in the console: `Application sample.javaee7.concurrency started in XX.XX seconds.`
+6. Confirm web browser opens with the sample url, [http://localhost:9080/sample.javaee7.concurrency/](http://localhost:9080/sample.javaee7.concurrency/).
 
 ## WAS Classic
 
